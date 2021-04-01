@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+
+    <title>AoT Guess Who</title>
+  </head>
+  <body class="bg-dark">
+  	<div class="row vh-100 mx-0">
+  		<div class="col-3 bg-darker rounded" id="sticky-sidebar">
+  			<div class="sticky-top p-4 h-100">
+          <div class="d-flex flex-column h-100">
+            <h1 class="text-light">My Character</h1>
+
+            <div class="card card-no-hover mt-4">
+              <img id="player-char-img" src="" class="card-img-top">
+              <div class="card-body p-2">
+                <h5 id="player-char-name" class="card-title text-center overflow-hidden mb-1"></h5>
+              </div>
+            </div>
+
+            <iframe class="w-100 mt-5 flex-grow-1" 
+            src="https://open.spotify.com/embed/playlist/6G1yylbkuV3dxeOYhdeguk" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+  		</div>
+  		<div class="col p-5 mt-0 vh-100" id="main">
+  			<div class="row row-cols-1 row-cols-md-4 row-cols-lg-6 g-4">
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/eren_yeager.jpeg" class="card-img-top" alt="Eren Yeager">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Eren Yeager</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/mikasa_ackerman.jpeg" class="card-img-top" alt="Mikasa Ackerman">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Mikasa Ackerman</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/armin_arlert.jpeg" class="card-img-top" alt="Armin Arlert">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Armin Arlert</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/reiner_braun.png" class="card-img-top" alt="Reiner Braun">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Reiner Braun</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/jean_kirstein.png" class="card-img-top" alt="Jean Kirstein">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Jean Kirstein</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/marco_bodt.png" class="card-img-top" alt="Marco Bodt">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Marco Bodt</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/connie_springer.jpeg" class="card-img-top" alt="Connie Springer">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Connie Springer</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/sahsa_blouse.jpeg" class="card-img-top" alt="Sasha Blouse">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Sasha Blouse</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/historia_reiss.jpeg" class="card-img-top" alt="Historia Reiss">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Historia Reiss</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/ymir.jpeg" class="card-img-top" alt="Ymir">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Ymir</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/floch_forster.jpeg" class="card-img-top" alt="Floch Forster">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Floch Forster</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/erwin_smith.png" class="card-img-top" alt="Erwin Smith">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Erwin Smith</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/hange_zoe.jpeg" class="card-img-top" alt="Hange Zoe">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Hange Zoe</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/mike_zacharias.jpeg" class="card-img-top" alt="Mike Zacharias">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Mike Zacharias</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/moblit_berner.png" class="card-img-top" alt="Moblit Berner">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Moblit Berner</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/levi_ackerman.jpeg" class="card-img-top" alt="Levi Ackerman">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Levi Ackerman</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/petra_rai.jpeg" class="card-img-top" alt="Petra Rai">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Petra Rai</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/porco_galliard.jpeg" class="card-img-top" alt="Porco Galliard">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Porco Galliard</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/falco_grice.jpeg" class="card-img-top" alt="Falco Grice">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Falco Grice</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/gabi_braun.jpeg" class="card-img-top" alt="Gabi Braun">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Gabi Braun</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/zeke_yeager.jpeg" class="card-img-top" alt="Zeke Yeager">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Zeke Yeager</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/bertoldt_hoover.png" class="card-img-top" alt="Bertoldt Hoover">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Bertoldt Hoover</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/annie_leonhart.png" class="card-img-top" alt="Annie Leonhart">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Annie Leonhart</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" onclick="flip(event)">
+              <img src="img/pieck_finger.jpeg" class="card-img-top" alt="Pieck Finger">
+              <div class="card-body p-2">
+                <h5 class="card-title text-center overflow-hidden mb-1">Pieck Finger</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+  		</div>
+  	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script src="js/load-player-stats.js"></script>
+    <script src="js/flip.js"></script>
+  </body>
+</html>
